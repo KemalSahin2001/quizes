@@ -1,0 +1,3 @@
+Highest note: John Doe 95
+lowest grade: Hailey Garcia 28
+avg grade: 63.625

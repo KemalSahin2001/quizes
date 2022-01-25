@@ -1,0 +1,13 @@
+0 read r1 # falling time
+1 read r2 # initial position
+2 read r3 # initial velocity
+3 setn r4 -10 # gravity
+4 mul r5 r1 r1 # t^2
+5 mul r5 r5 r4 # r5 = (g x t^2)
+6 setn r6 2 # dividing tool
+7 div r5 r5 r6 # r6 = (g x t^2) // 2
+8 mul r7 r1 r3 # initial velocity x falling time
+9 add r7 r7 r2 # r7 = (initial velocity x falling time) + initial position
+10 add r8 r7 r5 # r8 = ((g x t^2) // 2) + ((initial velocity x falling time) initial position)
+11 write r8
+12 halt
